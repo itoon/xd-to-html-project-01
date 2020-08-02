@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+  <script src="./main.js"></script>
+  <title>The Future Project</title>
+</head>
+<body>
+  <header id="mobile-header" class="d-block d-lg-none active">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-4">
+          <img src="./assets/imgs/logo@2x.png" alt="">
+        </div>
+        <div class="col-8 text-right">
+          <button class="toggle-menu btn">          
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>  
+  <nav id="mobile-nav-menu" class="d-lg-none">
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    <ul>
+  </nav>
+  <header id="desktop-header" class="d-none d-lg-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div id="logo" class="position-absolute">
+            <img src="./assets/imgs/logo@2x.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <nav>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <a href="#">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="btn btn-tel btn-f-primary position-absolute" href="tel:0846549189">0846549189</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="hero" class="section set-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-6">
+          <h1>The Future<br/><span>is Bright</span></h1>
+          <div class="action-area">
+            <a class="btn btn-f-dark">VIEW OUR LOCATION</a>
+            <a class="btn btn-f-primary">CONTACT US</a>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-6">
+          <img src="./assets/imgs/hero@2x.png" alt="Hero" class="big-img img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="section set-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <p class="primary mb-0 mb-md-2">Our Service Tools</p>
+          <h3 class="mb-4 mb-md-2">Excepteur Sint<br class="d-none md-block"/>Occaecat</h3>
+        </div>
+        <div class="col-md-6 col-lg-4 service">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/imgs/chronometer@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9">
+              <h5>Explore The Product</h5>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 service">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/imgs/competition@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9">
+              <h5>Explore The Product</h5>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 service mb-0">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/imgs/chronometer@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9">
+              <h5>Explore The Product</h5>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 service mb-0">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/imgs/competition@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9">
+              <h5>Explore The Product</h5>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 service mb-0">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/imgs/chronometer@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9">
+              <h5>Explore The Product</h5>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="why-us" class="section set-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="primary mb-0 mb-md-2">Why Choose Us</p>
+          <h2 class="text-heading">Praesent<br/><span class="primary">Luctus</span></h2>
+          <p>Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan, erat in suscipit viverra, massa purus Nulla ante risus, condimentum eu consectetur vel</p>
+          <div class="action-area mt-3 mt-md-5">
+            <a class="btn btn-f-primary">View Portfolio</a>
+          </div>            
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/imgs/hero@2x.png" alt="" class="img-fluid big-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" class="section set-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="primary mb-0 mb-md-2">Our Team</p>
+          <h2 class="text-heading">Professional<br/><span class="primary">Team</span></h2>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="profile-img text-center text-md-left">
+              <img src="./assets/imgs/member@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="member mb-3 mb-md-0">
+              <p class="position mb-0">Chief Operating Officer</p>
+              <h3 class="primary">Gustavo Povet</h3>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="profile-img text-center text-md-left">
+              <img src="./assets/imgs/member@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="member mb-3 mb-md-0">
+              <p class="position mb-0">Chief Operating Officer</p>
+              <h3 class="primary">Gustavo Povet</h3>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="profile-img text-center text-md-left">
+              <img src="./assets/imgs/member@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="member mb-3 mb-md-0">
+              <p class="position mb-0">Chief Operating Officer</p>
+              <h3 class="primary">Gustavo Povet</h3>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="profile-img text-center text-md-left">
+              <img src="./assets/imgs/member@2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="member mb-3 mb-md-0">
+              <p class="position mb-0">Chief Operating Officer</p>
+              <h3 class="primary">Gustavo Povet</h3>
+              <p>Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.</p>
+              <a href="#">Find Out More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="what-we-do" class="section set-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="primary mb-0 mb-md-2">What We Do</p>
+          <h2 class="text-heading">Our Case<br/><span class="primary">Studies</span></h2>
+        </div>
+      </div>
+      <div class="cases">
+        <div class="row">
+          <div class="col-12">
+            <ul class="filter">
+              <li><a href="#" class="active">ALL</a></li>
+              <li><a href="#">Financial</a></li>
+              <li><a href="#">Human Resources</a></li>
+              <li><a href="#">Start Up</a></li>
+              <li class="d-none d-md-block"><a href="#">Strategy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blogs" class="section set-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="primary mb-0 mb-md-2">BLOG NEWS</p>
+          <h2 class="text-heading">Our Latest<br/><span class="primary">Blog</span></h2>
+        </div>
+      </div>
+      <div class="listing">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+                <p>
+                  Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.
+                </p>
+                <a href="#">Find Out More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+                <p>
+                  Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.
+                </p>
+                <a href="#">Find Out More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-block d-md-none d-lg-block">
+            <div class="overlay-content">
+              <img src="./assets/imgs/case@2x.png" alt="" class="img-fluid">
+              <div class="detail">
+                <p class="mb-0 subtitle">Marketing, SEO</p>
+                <h4>Dicta Sunt Explicabo</h4>
+                <p>
+                  Vivamus lectus arcu, commodo sed turpis sit amet, consectetur dapibus massa.
+                </p>
+                <a href="#">Find Out More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xl-3">
+          <img src="./assets/imgs/logo@2x.png" alt="">
+        </div>
+        <div class="col-md-3 col-xl-2">
+          <p class="subtitle">Get In Touch</p>
+          <h6>Link</h6>
+          <ul class="menu">
+            <li>
+              <a href="#">Home</a>              
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Services</a>              
+            </li>
+            <li>
+              <a href="#">Blog</a>              
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <p class="subtitle">Dvant.</p>
+          <h6>Headquarters</h6>
+          <p>231 Gotham Square - 89 GM<br/>Metropolis city</p>
+          <div class="contact">
+            <p class="mb-0">Phone : +00 123 456 78</p>
+            <p class="mb-0">Mail	: info@dvant.com</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-xl-3">
+          <p class="subtitle">Follow Us</p>
+          <h6>Social Media</h6>
+          <p>Taking seamless key performance<br/>indicators offline to maximise the long tail.</p>
+          <div class="social-link">
+            <img src="./assets/imgs/facebook@2x.png" alt="">
+            <img src="./assets/imgs/facebook@2x.png" alt="">
+            <img src="./assets/imgs/facebook@2x.png" alt="">
+            <img src="./assets/imgs/facebook@2x.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
